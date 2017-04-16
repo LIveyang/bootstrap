@@ -1,0 +1,275 @@
+/*公共样式*/
+body{
+    font-family: "Microsoft YaHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background-color: #f5f5f5;
+}
+a{
+     color: #666;
+ }
+a:hover{
+    color: #666;
+    text-decoration: none;
+}
+.m_l10{
+    margin-left: 10px;
+}
+/*顶部通栏*/
+.wjs_topbar{
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+.wjs_topbar .container .row>div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.wjs_topbar .container .row>div:first-child a{
+    position: relative;
+    display: block;
+}
+.wjs_topbar .container .row>div:first-child a:hover img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -60px;
+    z-index: 1000;
+}
+.wjs_topbar .container .row>div:first-child img{
+    border: 1px solid #ccc;
+    display: none;
+}
+.wjs_topbar .container .row>div:last-child{
+    border-right: none;
+}
+.wjs_topbar .btn-main{
+    padding: 3px 15px;
+}
+.wjs_topbar .btn-deng{
+    color: #666;
+}
+.wjs_topbar .btn-deng:hover{
+    text-decoration: none;
+}
+/*导航*/
+.wjs_nav{
+    background-color: #ffffff;
+    margin-bottom: 0;
+}
+.wjs_nav .container-fluid .collapse .navbar-right .active a{
+    background:none;
+    border-bottom: 2px solid red;
+}
+.wjs_nav .container-fluid .collapse .navbar-right li a:hover{
+    border-bottom: 2px solid red;
+    color: #ff5c00;
+}
+.wjs_nav .container-fluid .collapse .navbar-right li {
+    margin-left: 30px;
+    font-size: 16px;
+}
+/*信息区域*/
+.wjs_info{
+    background: #fff;
+    border-bottom: 1px solid #cccccc;
+}
+.wjs_info .container .row{
+    margin: 40px;
+}
+.wjs_info .container .row>div{
+    text-align: center;
+    padding: 20px;
+}
+/*产品区*/
+/*把bootstrap的样式靠过来修改*/
+.nav-tabs-product{
+    border-bottom: 1px solid #ddd;
+}
+.nav-tabs-product> li {
+    float: left;
+    margin: 20px;
+}
+.nav-tabs-product > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+
+
+}
+.nav-tabs-product > li > a:hover {
+    /*border-color: #eee #eee #ddd;*/
+    background: none;
+    border-bottom: 3px solid red;
+}
+.nav-tabs-product > li.active > a,
+.nav-tabs-product > li.active > a:hover,
+.nav-tabs-product > li.active > a:focus {
+
+    cursor: default;
+    border-bottom: 3px solid red;
+}
+@media (min-width: 768px) {
+    .nav-tabs-product.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-product.nav-justified > .active > a,
+    .nav-tabs-product.nav-justified > .active > a:hover,
+    .nav-tabs-product.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+/*产品区域*/
+.wjs_product{
+    padding: 30px 0;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+.product_box{
+    height: 180px;
+    width: 100%;
+    display: block;
+    background: #fff;
+    color: #666;
+    margin-top: 25px;
+}
+.product_box.active:hover{
+   color: #fff;
+}
+.product_box.active{
+    background: #E92322;
+    color: #fff;
+}
+.product_box .product-left{
+      overflow: hidden;
+      height: 100%;
+      border-right: 1px dashed #ccc;
+}
+
+.product_box .product-left h3{
+    font-size: 16px;
+    text-align: center;
+}
+.product_box .product-right{
+       float: right;
+       width: 108px;
+       height: 150px;
+       text-align: center;
+       margin-top: 30px;
+       position: relative;
+
+}
+.product_box .product-right::before,.product_box .product-right::after{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    left: -6px;
+}
+.product_box .product-right::before{
+    top: -36px;
+}
+.product_box .product-right::after{
+    bottom: -4px;
+}
+.product_box .product-right p b{
+    font-size: 30px;
+}
+.wjs_product .tab-content .col-lg-4:nth-last-child(-n+3) .product-right p:nth-child(1){
+    color: #E92322;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-tabs-product-parent{
+        overflow: hidden;
+    }
+    .nav-tabs-product{
+        width: 768px;
+    }
+}
+/*新闻模块*/
+.wjs_news{
+    background: #fff;
+}
+.news-title{
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.news-title::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ccc;
+    right: 10px;
+    bottom: -2px;
+}
+
+/*修改新闻tab样式*/
+.nav-tabs-news > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+.nav-tabs-news > li > a:hover {
+    background: #E92322;
+    transition: all 1s ;
+    transform:rotate(360deg) scale(1.5);
+    ;
+}
+.nav-tabs-news > li.active > a,
+.nav-tabs-news > li.active > a:hover,
+.nav-tabs-news > li.active > a:focus {
+    background: #E92322;
+}
+/*一条虚线*/
+.title-line{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #ccc;
+    left: 44px;
+    top: 0;
+}
+.nav-tabs-news li:last-child a{
+    margin-bottom: 0px;
+}
+
+.wjs_news .tab-pane ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wjs_news .tab-pane ul li{
+    padding: 15px 0;
+    font-size: 16px;
+}
+.wjs_news .tab-pane ul li a{
+    color: #E92322;
+}
+/*小屏幕*/
+@media screen and (max-width: 992px){
+    .nav-tabs-news li{
+        float: left;
+        width: 25%;
+        margin-top: 10px;
+
+    }
+}
